@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Questão</title>
+    <link rel="stylesheet" href="selecionar_questoa.css">
+</head>
+<body>
+    <form action="confirmacao.html" method="get">
+        <div>
+            <h1>Selecionar Questões</h1>
+            <select id="disciplina" name="disciplina">
+                <option value="">Disciplina</option> <!--Isso tem que vir do cadastro-->
+                <option value="Português">Português</option>
+                <option value="Matemática">Matemática</option>
+                <option value="Desenvolvimento">Desenvolvimento Web</option>
+            </select>
+            <select id="banca" name="banca"> <!--Isso tem que vir do cadastro-->
+                <option value="banca">Banca</option>
+                <option value="uva">UVA</option>
+                <option value="enem">ENEM</option>
+                <option value="ifce">IFCE</option>
+            </select>
+            <select id="ano" name="ano">
+                <option value="">Ano</option> <!--Isso tem que vir do cadastro-->
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+            </select>
+            <br><br>
+            <details>
+                <summary>Desenvolvimento Web</summary>
+                <label><input type="checkbox" name="html" value="html">HTML</label><br>
+                <label><input type="checkbox" name="css" value="css">CSS</label><br>
+                <label><input type="checkbox" name="php" value="php">PHP</label><br>
+                <label><input type="checkbox" name="javascript" value="javascript">JavaScript</label>
+            </details>
+            <br>
+            <details>
+                <summary>Navegadores</summary>
+                <label><input type="checkbox" name="firefox" value="firefox">Firefox</label><br>
+                <label><input type="checkbox" name="chrome" value="chrome">Chrome</label><br>
+                <label><input type="checkbox" name="opera" value="opera">Opera</label><br>
+                <label><input type="checkbox" name="edge" value="edge">Edge</label>
+            </details>
+            <br>
+            <button>Salvar Caderno</button>
+        </div>
+    </form>
+</body>
+</html>

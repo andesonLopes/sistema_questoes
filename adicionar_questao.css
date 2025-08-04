@@ -1,0 +1,136 @@
+/* Reset básico e fonte */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f9fafb;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+form#formQuestao {
+  /* aumentar largura máxima */
+  max-width: 900px;
+  width: 100%;
+  /* mantém o padding e outros estilos */
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Inputs lado a lado - grupo superior */
+#banca,
+#ano,
+#disciplina,
+#assunto {
+  width: 48%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+#banca:focus,
+#ano:focus,
+#disciplina:focus,
+#assunto:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Textarea enunciado */
+textarea#enunciado {
+  width: 100%;
+  min-height: 180px;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  margin-bottom: 25px;
+  transition: border-color 0.3s ease;
+}
+
+textarea#enunciado:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Alternativas inputs full width com espaçamento */
+div > input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+div > input[type="text"]:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Select de alternativa correta */
+label select#correta {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  transition: border-color 0.3s ease;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+
+label select#correta:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Botão estilizado */
+button {
+  width: 40%;       /* largura menor */
+  display: block;   /* para respeitar margem automática */
+  margin: 0 auto;   /* centraliza horizontalmente */
+  background-color: #4caf50;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 16px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #43a047;
+}
+
+/* Remove os <br><br> que atrapalham layout */
+br {
+  display: none;
+}

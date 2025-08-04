@@ -1,0 +1,92 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Corpo */
+body {
+  background-color: #f9fafb;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Container principal */
+div {
+  background-color: #fff;
+  padding: 35px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Títulos */
+h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Pergunta */
+p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+/* Inputs e labels das alternativas */
+input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+label {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Espaçamento entre alternativas */
+input[type="radio"] + label {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+/* Quebra de linha para alternativas */
+br {
+  margin-bottom: 10px;
+}
+
+/* Botão */
+button {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #388e3c;
+}

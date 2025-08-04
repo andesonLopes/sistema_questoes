@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Questão</title>
+    <link rel="stylesheet" href="adicionar_questao.css">
+</head>
+<body>
+    <form action="sucesso.html" method="get" id="formQuestao">
+        <div>
+            <h1>Adicionar Questão</h1>
+            <input type="text" id="banca" placeholder="Banca">
+            <input type="text" id="ano" placeholder="Ano">
+            <input type="text" id="disciplina" placeholder="Disciplina">
+            <input type="text" id="assunto" placeholder="Assunto">
+            <br><br>
+            <form>
+                <textarea id="enunciado" name="enunciado" placeholder="Enunciado" rows="20" cols="100" required></textarea>
+            </form>        
+            <div>
+                <input type="text" id="altA" placeholder="Alternativa A" required>
+                <br><br>
+                <input type="text" id="altB" placeholder="Alternativa B" required>
+                <br><br>
+                <input type="text" id="altC" placeholder="Alternativa C" required>
+                <br><br>
+                <input type="text" id="altD" placeholder="Alternativa D" required>
+                <br><br>
+                <input type="text" id="altE" placeholder="Alternativa E" required>
+            </div>
+            <br>
+            <label>
+                <select id="correta" required>
+                    <option value="certa">Alternativa Correta</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                </select>
+            </label>
+            <br><br>
+            <button>Salvar</button>
+        </div>
+    </form>
+</body>
+</html>
